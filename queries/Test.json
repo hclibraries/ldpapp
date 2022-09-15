@@ -1,0 +1,23 @@
+{
+  "tables": [
+    {
+      "schema": "public",
+      "tableName": "course_courses",
+      "columnFilters": [
+        {
+          "key": "name"
+        }
+      ],
+      "showColumns": [],
+      "orderBy": [],
+      "limit": "1000"
+    }
+  ],
+  "META": {
+    "displayName": "Test",
+    "autoRun": true,
+    "creator": "holycross_admin",
+    "created": "2022-09-15T19:35:06.844Z",
+    "comment": "Test"
+  }
+}
