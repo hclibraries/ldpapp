@@ -1,0 +1,24 @@
+{
+  "tables": [
+    {
+      "schema": "folio_reporting",
+      "columnFilters": [
+        {
+          "key": "cataloged_date",
+          "op": ">",
+          "value": "2022-12-01"
+        }
+      ],
+      "showColumns": [],
+      "orderBy": [],
+      "limit": "1000",
+      "tableName": "items_holdings_instances"
+    }
+  ],
+  "META": {
+    "displayName": "New Items",
+    "autoRun": true,
+    "creator": "holycross_admin",
+    "created": "2023-01-24T19:40:53.155Z"
+  }
+}
