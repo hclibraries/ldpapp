@@ -1,6 +1,6 @@
 --metadb:function loan_count
-DROP FUNCTION IF EXISTS count_loans;
-CREATE FUNCTION count_loans (
+DROP FUNCTION IF EXISTS loan_count;
+CREATE FUNCTION loan_count (
 	start_date date DEFAULT '2000-01-01',
 	end_date date DEFAULT '2050-01-01')
 RETURNS TABLE(
@@ -10,8 +10,7 @@ $$
 SELECT item_id,
 	   count(*) AS loan_count
 	 FROM folio_circulation.loan__t
-	 WHERE start_date <= loan_date AND
-						 loan_date < end_date
+	 WHERE start_date <= loan_date AND loan_date < end_date
 	 GROUP BY item_id
 $$
 LANGUAGE SQL;
