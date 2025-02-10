@@ -13,7 +13,7 @@ AS $$
 SELECT id,
        barcode,
        created_date
-    FROM user_users
+    FROM folio_users.users__t
     WHERE start_date <= created_date AND created_date < end_date
 $$
 LANGUAGE SQL
