@@ -1,5 +1,14 @@
 {
-    "displayName": "collection",
-    "description": "collection"
+    "displayName": "Collection",
+    "description": "Collection Use Report",
+    "instructions": "N/A",
+    "parameters": [
+        {
+            "name": "start_date",
+            "displayName": "Earliest date of user creation",
+            "type": "date",
+            "required": false,
+            "disabled": true
+        }
+    ]
 }
-
