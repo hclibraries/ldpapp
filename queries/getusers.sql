@@ -8,7 +8,7 @@ CREATE FUNCTION get_users(
 RETURNS TABLE(
     id uuid,
     barcode text,
-    created_date timestamptz)
+    created_date
 AS $$
 SELECT id,
        barcode,
