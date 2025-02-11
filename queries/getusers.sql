@@ -14,7 +14,7 @@ SELECT id,
        barcode,
        created_date
     FROM folio_users.users__t
-    WHERE start_date <= created_date AND created_date < end_date
+    WHERE start_date <= created_date::DATE AND created_date::DATE < end_date
 $$
 LANGUAGE SQL
 STABLE
