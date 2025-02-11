@@ -16,4 +16,6 @@ SELECT item_id,
          AND loan_date::DATE < end_date
 	 GROUP BY item_id
 $$
-LANGUAGE SQL;
+LANGUAGE SQL
+STABLE
+PARALLEL SAFE;
