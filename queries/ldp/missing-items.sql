@@ -1,3 +1,5 @@
+--ldp:function loan_count
+
 SELECT
 	ihi.title,
 	ie.barcode,
